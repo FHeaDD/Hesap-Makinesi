@@ -1,0 +1,38 @@
+#-*- coding: utf-8 -*-
+print("""*******************
+Hesap Makinesi
+
+İşlemler;
+
+1.Toplama İşlemi
+
+2.Çıkarma İşlemi
+
+3.Çarpma İşlemi
+
+4.Bölme İşlemi
+
+Coded By FHeaD
+*******************""")
+
+
+#Kullanıcıdan Değerleri Alıyoruz.
+a = int(input("İlk Sayı :"))
+b = int(input("İkinci Sayı:"))
+
+#Kullanıcıdan Yapmak İstediği İşlemin Numarasını Alıyoruz. Numarayı girdikten sonra işlem sonucu ekrana yansıyor.
+islem = input("İşlemi Giriniz:")
+
+if islem == "1":
+    print("{} ile {} in toplami {} dir".format(a,b,a+b))
+
+elif islem == "2":
+    print("{} ile {} in farkı {} dir".format(a,b,a-b))
+
+elif islem == "3":
+    print("{} ile {} in çarpımı {} dir".format(a,b,a*b))
+
+elif islem == "4":
+    print("{} ile {} in bölümü {} dir".format(a,b,a/b))
+else:
+    print("Geçersiz İşlem..")
